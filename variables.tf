@@ -6,15 +6,17 @@ variable "resource_group_name" {
   type        = string
   description = "value"
 }
-# variable "location" {
-#   type        = string
+
+# variable "name_of_containers" {
+#   type        = list(string)
 #   description = "value"
 # }
-variable "name" {
-  type        = string
+# variable "container_access_type" {
+#   type        = list(string)
+#   description = "value"
+# }
+variable "container_details" {
+  type = list(any)
   description = "value"
-}
-variable "container_access_type" {
-  type        = string
-  description = "value"
+  
 }
